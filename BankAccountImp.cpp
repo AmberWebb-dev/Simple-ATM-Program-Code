@@ -59,8 +59,8 @@ double Bank::getWithdrawl(float minus, double balance){
 //***********************************************************************************************
 
 double Bank::getInterest(){
-    Interest = (Interest / 100) * Balance;
-    Balance = Balance - Interest;
+    double newInterest = (Interest / 100) * Balance;
+    Balance = Balance - newInterest;
     return Balance;
 }
 
